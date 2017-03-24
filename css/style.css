@@ -1,0 +1,341 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans'
+    
+    
+    
+
+
+*{
+    
+    padding:0px;
+    margin:0px;
+    border:0px;
+}
+
+body{
+    
+    font-family:'Alegreya Sans', sans-serif;
+    line-height: 150%;
+    background-color:#F5F5F5;
+    
+    
+}
+/* Header styling */
+header{
+    background-color:#00979C;
+    width:100%;
+    height: 135px;
+    border-bottom-style: double;
+    border-bottom-color: red;
+    border-bottom-width: thick;
+    
+}
+
+header .topview {
+    
+    margin: 0 auto;
+    max-width:1200px;
+
+    
+}
+
+header nav{
+    
+    float:right;
+    display: inline;
+    
+    padding:15px;
+    padding-top:5%;
+    margin-right:-90px;
+    
+}
+header nav ul{
+    
+    
+    list-style-type: none;
+    
+}
+
+header nav li{
+    
+    
+    float:left;
+    
+    display: inline;
+    text-align: center;
+    padding:0px 10px;
+    
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    color:#F5F5F5;
+    font-size: 25px;
+}
+header nav li a:hover{
+    color:#C3D7DF;
+    
+}
+.current{
+    color:#C3D7DF;
+}
+
+#logo{
+    
+    float:left;
+    
+    margin: 2% 5%;
+    color:#F5F5F5;
+    background: url(../img/logo2.PNG) no-repeat;
+        width:20%;
+    height: 100px;
+    
+    
+    
+}
+
+/*Header styling ends here */
+
+/* Intro part styling start here */
+
+.intro h1{
+    
+    text-align: center;
+    font-size: 200%;
+    padding:5px;
+    margin-top: 35px;
+    line-height:150%;
+    font-family: sans;
+    color: #00979C;
+    
+}
+.intro h2{
+    
+    font-family:sans-serif;
+    margin:30px 5px;
+    
+    
+}
+
+.intro p{
+    margin-left: 5px
+}
+
+.intro img {
+
+
+width:33.3333%;
+
+float:left;
+margin:30px 500px;
+    
+    
+}
+
+    
+.intro p.second{
+    padding-left:5px;
+    clear:both;
+    
+    
+}    
+
+/*Intro part ends here */
+
+/*technical part styling starts here */
+    
+.technical h1{
+    text-align: center;
+    font-size:150%;
+    color:#00979C;
+    font-family: sans;
+    margin:50px auto;
+    
+
+}
+.technical #img1
+{
+    float:left;
+    height: 250px;
+    margin-right:100px;
+    margin-left:250px;
+    
+}
+.technical #img2{
+    
+    float:right;
+    margin-right:250px;
+    margin-left:100px;
+    
+}
+.technical .first{
+    
+    clear:both;
+    padding-top:15px;
+    padding-left:5px;
+}
+
+.technical h3{
+    
+    
+font-size:150%;
+    font-family: sans;
+    
+    padding-left:5px;
+}
+
+.technical p.second{
+    padding-left:5px;
+}
+
+/*technical part styling ends here */
+
+/*Requirement section styling starts here */
+
+
+.requirement h1{
+    
+    font-size:150%;
+    margin-left:5px;
+    
+}
+
+.requirement ul li{
+    
+    color:#FF6347;
+    list-style-type:disc;
+    font-size:110%;
+    padding:5px 0px;
+    margin-left:5px;
+}
+
+/*requirement styling ends here */
+
+/*instruction styling starts here */
+
+.instruction h1{
+    
+    font-size:150%;
+    font-family: sans;
+   margin-left:5px;
+}
+
+
+.instruction .img1{
+    
+    float:left;
+    margin-left:250px;
+    max-width: 1200px;
+}
+
+.instruction .img2{
+    float:left;
+    margin-left:200px;
+    max-width: 1200px;
+
+    
+}
+
+.instruction .img3{
+    
+    float:left;
+    margin-left:220px;
+    max-width: 1200px;
+}
+
+.instruction .img4{
+    float:left;
+    margin-left:140px;
+    max-width: 1200px;
+}
+
+.instruction ol {
+    margin-left:5px;
+    
+}
+.instruction ol li{
+    clear:both;
+    padding:5px;
+}
+
+/*instruction styling ends here */
+
+.code{
+    width:50%;
+    float:left;
+    margin-left:350px;
+    margin-top:50px;
+    height: 500px;
+    overflow: scroll
+}
+
+.code h1{
+    
+    background-color:lightgrey;
+    margin-top:30px;
+    padding:15px;
+    text-align: center;
+    color: #00979C;
+    
+    
+}
+#codeheading{
+
+    text-align: center;
+    font-size: 150%;
+    padding:15px;
+    margin-bottom:-5%;
+    font-family: sans;
+    
+    
+}
+
+/*instruction styling ends here */
+/*video styling starts here */
+
+
+.video h1{
+    
+    text-align: center;
+    
+    width:93%;
+    padding:25px;
+    font-size: 200%;
+    font-family: sans;
+    color:#00979C;
+    
+    background-color:lightgray;
+    
+    
+    
+}
+.video  {
+    
+
+    float:left;
+    clear:both;
+    margin:0 auto;
+    margin-top:60px;
+    margin-left:350px;
+    
+}
+
+
+/*video styling ends here */
+
+footer{
+    clear:both;
+    
+    text-align: center;
+    margin: 0 auto;
+    
+    padding-top:50px;
+    margin-left:200px;
+}
+footer span{
+    
+    padding-right:15px;
+    
+}
+
+
+

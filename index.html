@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pushbutton | Arduino</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+    
+    
+</head>
+
+<body>
+<header>
+    
+    <div  class="topview">
+    <td><a href="index.html" id="logo"></a></td>
+        <nav>
+        <ul class="navigation">
+            
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="#">Tutorial</a> </li>
+            <li><a href="about.html" >About</a></li>
+            
+            </ul>
+        
+        </nav>
+    </div>
+    
+    </header>
+<section >
+    <article class="intro">
+    <h1>[Tutorial] How to use pushbutton with arduino to on/off LED</h1>
+        <h2>What is Arduino?</h2>
+        <p class="first">Arduino is an open source, computer hardware and software company, project, and user community that designs and manufactures microcontroller kits for building digital devices and interactive objects that can sense and control objects in the physical world. Basically you can use your input and output devices with arduino to have fun!!</p>
+        <h2> Introduction </h2>
+        <img src="img/F5PDF7LIADH24FK.MEDIUM.jpg" id="banner"/>
+        <p class="second">A pushbutton is basically a input device that connect the two points in a circuit when you pressed them. In this tutorial when a pushbutton is pressed the LED will gonna On and Off when you release the pushbutton.
+        </p>
+    </article>
+    
+    </section>
+
+    <section>
+        <article class="technical">
+    
+        
+        <h1> Lets have a look to a internal circuit of pushbutton</h1>
+        <img src="img/pushbutton2.jpg" id="img1" />
+        <img src="img/pushbutton1.jpg" id="img2" />
+        
+        <p class="first">As I have earlier mentioned that pushbutton connects two point when pressed.This is how its internal circuit looks like. Two legs on each side are connected together with a opening in between the pairs of connected legs.</p>
+        
+        <h3>How to check which legs are connected in series</h3>
+        <p class="second">You can use the multimeter to identify  the series connection in between legs. Set your multimeter to resistance mode and use your test probes in between any two legs. If multimeter gives some positive value that means the legs are connected in series or if it give zero value that means the legs are not connected in series.</p>
+        
+        </article>
+    
+    </section>
+    
+    <section>
+    <article class="requirement">
+        <h1>What stuffs are required</h1>
+        <ul>
+            <li>Arduino uno</li>
+            <li>breadboard</li>
+            <li>LED(1)</li>
+            <li>10k ohm resistor(1)</li>
+            <li>220 ohm resistor(1)</li>
+            <li>Push button(1)</li>
+            <li>Some Jumper wires</li>
+        
+        </ul>
+        
+        
+        </article>
+    
+    </section>
+    <section>
+    <article class="instruction">
+        <h1>Step-by-Step Instruction</h1>
+        <ol>
+        <li>Connect an Arduino GND pin and VCC(+5V) to the long power rails on the breadboard. These will be the GND and VCC rails. </li>
+            <img src="img/step1.PNG" class="img1" />
+            
+            <li>Connect the digital I/O pin 12 to one of the row of breadboard.</li>
+            <li> Place your LED on breadboard. Connect the shorter(-ve) terminal of LED to GND row and longer(+ve) terminal to Pin 12 row along with 220 Ohm resistor .</li>
+            <img src="img/step2.PNG" class="img2" />
+            <li>Place the push button on breadboard.</li>
+            <li>Connect one of the terminal(legs connected in series) to GND along with 10k Ohm resistor. </li>
+            <img src="img/step3.PNG" class="img3" />
+            <li>Connect the other terminal to the VCC row of breadboard using jumper wires.</li>
+            <li>Now connect the grounded terminal of pushbutton to arduino digital I/O pin 2 using jumper wires.</li>
+            <img src="img/step4.PNG" class="img4" />
+            <li>Plug the Arduino board into your computer with a USB cable.</li>
+            <li>Open the Arduino IDE.</li>
+            <li>Put the code provided into the code section below. </li>
+            <li>Compile the code. </li>
+            <li>Upload the code to Arduino board.</li>
+            <li>Here you Go! When you press the pushbutton the LED turns ON and when you release the LED turns OFF.</li> 
+        </ol>
+        
+        
+        </article>
+        
+    </section>
+    
+    <section>
+        <h1 id="codeheading">Code</h1>
+    <div class="code" >
+        
+ <h1>Arduino Pushbutton Code</h1>
+        <p>
+            //Code for pushbutton </br>
+
+
+            int ledpin=12;   //For LED  </br>
+        int buttonpin=2;   //For Pushbutton </br>
+
+void setup() { </br>
+// put your setup code here, to run once: </br>
+
+pinMode(buttonpin,INPUT); </br>
+pinMode(ledpin,OUTPUT); </br>
+  
+
+} </br>
+
+void loop() { </br>
+// put your main code here, to run repeatedly:</br>
+
+if(digitalRead(buttonpin)==1)   //when the pushbutton pressed </br>
+{ </br>
+digitalWrite(ledpin,HIGH); </br>
+    
+} </br>
+else </br>
+{ </br>
+digitalWrite(ledpin,LOW);   //when the pushbutton released </br>
+    
+} </br>
+
+
+} </br>
+//end of the code</p>
+        
+        
+        
+        </div>
+    
+    
+    </section>
+
+
+<section>
+    
+<div class="video">
+    <h1>Simulation of the circuit</h1>
+    
+    <iframe width ="850" height="315" src="https://youtube.com/embed/1bjHSJdFDYs">
+    
+    </iframe>
+    
+    
+    </div>
+
+</section>
+<footer>
+    <h3><span>Copyright</span>   &copy Everything-enginnering</h3>
+
+</footer>
+
+</body>
