@@ -1,0 +1,32 @@
+//Code for pushbutton
+
+
+int ledpin=12;   //For LED
+int buttonpin=2;   //For Pushbutton
+
+void setup() {
+  // put your setup code here, to run once:
+
+  pinMode(buttonpin,INPUT);
+  pinMode(ledpin,OUTPUT);
+  
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  if(digitalRead(buttonpin)==1)   //when the pushbutton pressed
+  {
+    digitalWrite(ledpin,HIGH);
+    
+  }
+  else
+  {
+    digitalWrite(ledpin,LOW);   //when the pushbutton released
+    
+  }
+
+}
+
+//Code ends here
